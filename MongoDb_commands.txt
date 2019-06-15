@@ -1,0 +1,13 @@
+mongorestore --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin
+mongodump --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin --db <DATABASE> 
+mongoimport --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin --db <DATABASE> --collection <COLLECTION> --type <FILETYPE> --file <FILENAME>
+mongoexport --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin --db <DATABASE> --collection <COLLECTION> --type <FILETYPE> --out <FILENAME>
+mongostat --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin 
+mongotop --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username him --password <PASSWORD> --authenticationDatabase admin 
+mongo -u "Megham" -p --authenticationDatabase temp
+show dbs
+db.users.find().pretty()
+C:\Users\Megham Garg>mongodump --db temp --collection users --username Megham --password garg --authenticationDatabase temp
+C:\Users\Megham Garg>mongorestore --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username Megham --password garg --authenticationDatabase temp
+C:\Users\Megham Garg>mongorestore --host Cluster0-shard-0/cluster0-shard-00-00-xnudd.mongodb.net:27017,cluster0-shard-00-01-xnudd.mongodb.net:27017,cluster0-shard-00-02-xnudd.mongodb.net:27017 --ssl --username Megham --password garg --authenticationDatabase admin
+mongorestore -u akshay -p oceana --authentication temp --db temp
