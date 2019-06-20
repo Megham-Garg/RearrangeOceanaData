@@ -1,4 +1,4 @@
-# Correcting the order of data in excel file using pandas<br/>Adding it to the MongoDB database using pymongo module
+# Correcting the order of data in excel file using pandas.<br/>Adding it to the MongoDB database using pymongo module.
 
 This is a POC(proof of concept) repository
 <br/>input:
