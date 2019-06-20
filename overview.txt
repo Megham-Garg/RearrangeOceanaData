@@ -1,0 +1,11 @@
+**overview**
+1. make a client to connect to mongodb default port
+2. create a database
+3. create a collection
+4. read all the Excel files in dataframes
+5. convert those dataframes into list of dictionaries
+6. define functions to order the data of those dictionaries
+7. define a function to check empty field of a user
+8. define function to insert the ordered dictionary into database
+9. call above functions in a proper place 
+10. (you can use multithreading if you want to decrease execution time).
